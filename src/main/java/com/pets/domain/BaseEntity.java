@@ -2,7 +2,12 @@ package com.pets.domain;
 
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 
-import javax.persistence.*;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+import javax.persistence.PrePersist;
+import javax.persistence.TableGenerator;
 import java.util.UUID;
 
 @MappedSuperclass

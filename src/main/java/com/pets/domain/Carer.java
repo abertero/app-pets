@@ -4,6 +4,7 @@ import com.pets.enums.LengthScale;
 
 import javax.persistence.Entity;
 import javax.persistence.Enumerated;
+import javax.persistence.Lob;
 
 @Entity
 public class Carer extends Person {
@@ -12,6 +13,7 @@ public class Carer extends Person {
     private Double placeOfCareLength;
     @Enumerated
     private LengthScale lengthScale;
+    @Lob
     private String associatedGrades;
 
     public Double getPlaceOfCareHeight() {
